@@ -114,7 +114,7 @@ After the launch of FICUS software, following the instructions recommended in th
 \subfloat
 {\includegraphics[width=.45\textwidth]{Capture19.jpg}} \\
 
-\caption{(\textbf{a}) The log of the dew point temperature. (\textbf{b}) the table with all the last measured temperatures.}\label{fig:fig2}
+\caption{(\textbf{a}) The log of the dew point temperature. (\textbf{b}) the table with all the last measured temperatures (visible after connecting the detectors).}\label{fig:fig2}
 \end{figure}
 
 In the \textbf{System Monitor window} it is possible to see the dew point temperature of the system, the time, the status of the detectors and the status of the TCP Remote Server (red disconnected - green connected). 
@@ -148,8 +148,7 @@ In the log it is possible to modify the time duration displayed and to set the e
 {\includegraphics[width=.48\textwidth]{Capture17.jpg}} \quad
 \subfloat
 {\includegraphics[width=.48\textwidth]{Capture18.jpg}} \\
-
-\caption{In clockwise direction starting from the top left (\textbf{a}) The log of the temperature of the strips. (\textbf{b}) The log of the temperature of the LDOs. (\textbf{c}) The log of the temperature of the FPGAs. (\textbf{d}) the log of the temperature of the ASICs.}\label{fig:fig4}
+\caption{In clockwise direction starting from the top left (\textbf{a}) The log of the temperature of the strips (\textbf{b}) The log of the temperature of the LDOs (\textbf{c}) The log of the temperature of the FPGAs (\textbf{d}) the log of the temperature of the ASICs.}\label{fig:fig4}
 \end{figure}
 \clearpage 
 
@@ -403,7 +402,7 @@ It is possible to choose whether to display the Y axis in linear or logarithmic 
 \caption{The windows of the FICUS acquisition (Histogram), after the measurement by one minute with VTEST and Double VTEST.}\label{fig:fig24}
 \end{figure}
 
-During or after the acquisition it is possible to select Regions Of Interest (ROI) clicking on \textit{Add ROI} and by positioning the sliders manually; up to 20 different ROIs can be selected (there are 4 colours and they repeat cyclically with no choice). 
+During or after the acquisition it is possible to select Regions Of Interest (ROI) clicking on \textit{Add ROI} and by positioning the sliders manually; up to 20 different ROIs can be selected (there are 4 colours and they repeat cyclically with no choice) [Fig. \ref{fig:fig24}]. 
 The table below shows the data of each ROI: \textit{Events}, \textit{Min} position, \textit{Max} position, \textit{Peak} position, and an estimate of the \textit{FWHM} (is calculated as the width at half height considering the intersections of the sliders with the signal). 
 If the calibration procedure has been performed, when eV is selected as the X unit, the ROI data also changes the unit of measurement.
 The ROI can be removed individually by clicking on \textit{Remove ROI} and selecting the one to be deleted, or all by clicking on \textit{Clear all}.
@@ -426,7 +425,7 @@ Instead of the histogram, it is possible to display the \textit{Counts Chart} to
 \caption{The windows of the FICUS acquisition (Counts Charts), after Alignment and Calibration.}\label{fig:fig26}
 \end{figure}
 
-To save the acquired data and the information related to them, just click on \textit{SAVE DATA}, select the saving folder and indicate the name of the file.
+To save the acquired data and the information related to them, just click on \textit{SAVE DATA}, select the saving folder and indicate the name of the file. 
 
 To delete the acquisition data, and be ready to start with a new acquisition (continuing to work with the same alignment and calibration) just click on \textit{Clear All}.
 
@@ -455,40 +454,344 @@ This version of the software is recommended for the beamline staff in order to o
 
 To pass from the FICUS software User version to the Beamline Staff version it is necessary to have the access codes.
 
-Only the FICUS software Beamline Staff version can connect the detectors
+Only the FICUS software Beamline Staff version can connect the detectors. 
+
+\begin{figure}[h]
+\centering
+{\includegraphics[width=.5\textwidth]{Cattura74.jpg}} \quad
+\caption{The FICUS control window: to pass from the FICUS software User version to the Beamline Staff version.}\label{fig:fig30}
+\end{figure}
+
+After the launch of FICUS software, following the instructions recommended in this manual for switching on the detector system, the first window is the one shown in Fig. \ref{fig:fig31}.
+
+        \begin{figure}[h]
+        \centering
+        \includegraphics[scale=0.5]{Cattura66.jpg} \quad %width=0.7\textwidth
+        \caption{The first window of FICUS software}\label{fig:fig31}
+        \end{figure}
+
+\begin{figure}[h]
+\centering
+\subfloat
+{\includegraphics[width=.45\textwidth]{Cattura76.jpg}} \quad
+\subfloat
+{\includegraphics[width=.45\textwidth]{Capture47a.jpg}} \\
+\caption{(\textbf{a}) The log of the dew point temperature. (\textbf{b}) the table with all the last measured temperatures (visible after connecting the detectors).}\label{fig:fig32}
+\end{figure}
+
+In the \textbf{System Monitor window} it is possible to see the dew point temperature of the system, the time, the status of the detectors and the status of the TCP Remote Server (red disconnected - green connected). 
+
+
+After connect of the detector, it is also possible to click on \textit{System monitor} to know: 
+\begin{itemize}
+    \item the log of the dew point temperature [in Fig. \ref{fig:fig32} (a)]
+    \item the log of the temperature of the strips [in Fig. \ref{fig:fig33} (a)]
+    \item the log of the temperature of the LDOs [in Fig. \ref{fig:fig33} (b)]
+    \item the log of the temperature of the FPGAs [in Fig. \ref{fig:fig33} (c)]
+    \item the log of the temperature of the ADCs [in Fig. \ref{fig:fig33} (d)]
+    \item the table with all the last measured temperatures [in Fig. \ref{fig:fig32} (b)]
+\end{itemize}
+
+In the log it is possible to modify the time duration displayed and to set the extremes of the graph, or to set its auto setting.
+
+\begin{figure}[h]
+\centering
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura77.jpg}} \quad
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura78.jpg}} \\
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura79.jpg}} \quad
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura80.jpg}} \\
+\caption{In clockwise direction starting from the top left (the values represented are derived from a simulation and purely figurative) (\textbf{a}) The log of the temperature of the strips (\textbf{b}) The log of the temperature of the LDOs (\textbf{c}) The log of the temperature of the FPGAs (\textbf{d}) the log of the temperature of the ASICs.}\label{fig:fig33}
+\end{figure}
+\clearpage 
+
+To connect the detector system click on \textit{Connect} (in Fig. \ref{fig:fig31}). The connection window in Fig. \ref{fig:fig34} (a) appears. 
+Click on \textit{Run TCP-IP and FPGA tests} and, if the test is successful, all the boxes will be colored green [Fig. \ref{fig:fig5} (b)] and you can proceed to the connection by clicking \textit{OK}.
+
+\begin{figure}[h]
+\centering
+\subfloat
+{\includegraphics[scale=0.5]{Cattura67.jpg}} \\
+\subfloat
+{\includegraphics[scale=0.5]{Cattura68.jpg}} \\
+\caption{The connection window -(\textbf{a}) before connecting tests (\textbf{b}) The connection window - after passing the connecting tests (in simulation mode, for figurative use).}\label{fig:fig34}
+\end{figure}
+
+A message appears asking if you want to restore the previously used settings: press \textit{OK} to proceed or \textit{Cancel} to annul the setting restore [Fig. \ref{fig:fig35 (a)}]. It is possible to see that the status of the detector has changed to CONNECTED [Fig. \ref{fig:fig35 (b)}].
+
+\begin{figure}[h]
+\centering
+\subfloat
+{\includegraphics[scale=0.4]{Cattura69.jpg}} \quad
+\subfloat
+{\includegraphics[scale=0.4]{Cattura70.jpg}} \\
+\caption{The FICUS control window: (\textbf{a}) during connection, with the message asking if you want to restore the previously used settings (\textbf{b}) After connection.}\label{fig:fig35}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+{\includegraphics[width=.95\textwidth]{Capture57.jpg}} \quad
+\caption{The first windows of the FICUS setting (with Global Setup).}\label{fig:fig36}
+\end{figure}
+
+The first window of the \textbf{FICUS settings} opens, in \textit{Spectrum View} [Fig. \ref{fig:fig36}]. Here, at the top from the left you can see the signals of the individual channels: 4 at a time (those highlighted in light green in the panel at the bottom left), and you can change which ones to select by clicking on the green arrows in the center on the right. In in the panel at the bottom left, in addition to the \textit{Cell Status}, it is also possible to display the map of the \textit{Enabled/Disabled} channels [Fig. \ref{fig:fig37} (a)], and the map of the channels in \textit{Permanent Reset} [Fig. \ref{fig:fig37} (b)]. Within each box in the upper part, it is possible \textit{Enable/disable} the channel, put the channel in \textit{Permanent reset}, and manually set the \textit{Threshold}, \textit{Baseline} and \textit{Filter}. \\
+In the upper right corner, it is possible to enable and disable the test signals (\textit{VTEST} and \textit{Double VTEST}) and to select the \textit{Frame Duration} (among the values: 5 ms, 7.5 ms, 10 ms, 25 ms, 50 ms, 75 ms, 100 ms, 250 ms, 500 ms, 750 ms, 1 s, 2.5 s, 5 s, 7.5 s, 10 s, and External Gate).\\
+In the central part on the right there are buttons to activate the measurement: \textit{Single Acquire (F5)} and \textit{Continuous Acquire (F6)}, and a green dot indicating the acquisition in progress. \\
+In the lower right part of the window there are: a graph with the Cells counts represented (with the graduated scale of colors next to it), one with the Cells status visible (where in grey it is an unavailable channel, in green an active and counting channel, in red an inactive and with error channel, in black a disabled channel, and in dark green an active and with no counts channel, placed in permanent reset). There are also three buttons (\textit{Show 1 Cell Plot}, \textit{Show All Plots}, \textit{Show Counts}), which allow you to view respectively the detail of the signal of a channel [Fig. \ref{fig:fig39} (a)], the contemporary graph of all 64 channels [Fig. \ref{fig:fig38}] and the counts of 64 channels [Fig. \ref{fig:fig39} (b)]. In this graphs it is possible to change X and Y scale of the histograms.
+
+
+\begin{figure}[h]
+\centering
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura104.jpg}} \quad
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura105.jpg}} \\
+\caption{The windows of the FICUS setting, in Main Setting (\textbf{a}) Enabled/Disabled, and (\textbf{b}) Permanent Reset channels.}\label{fig:fig37}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+{\includegraphics[width=.80\textwidth]{Capture56.jpg}} \quad
+\caption{The windows of the FICUS with Show All Plots, with signal.}\label{fig:fig38}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\subfloat
+{\includegraphics[width=.35\textwidth]{Capture54.jpg}} \quad
+\subfloat
+{\includegraphics[width=.55\textwidth]{Capture55.jpg}} \\
+\caption{The windows of the FICUS with (\textbf{a}) Show 1 Cell Plot, and (\textbf{b}) Show Counts.}\label{fig:fig39}
+\end{figure}
+
+In the central part of the window, there is an additional menu that modifies the central part of the window by enabling further possible adjustments. \\
+In \textit{Global Setup} there is the possibility to save (assigning a name and notes) the current settings, with \textit{Save Global Setup}, or to open settings already set and saved, with \textit{Load Global Setup}. if you select the latter option in particular, a further window opens in which it is possible to choose from the 8 pre-set global setups: four different possible filter lengths (0.4, 0.7, 1, and 1.45 $\mu$s) at two possible cell temperatures (at room temperature, Tamb, and with cooled cells with voltage on the Peltier cells, Tcool) [Fig. \ref{fig:fig10} (a)]. After selecting the one you want, just click on \textit{OK, load this setup}, and \textit{Yes} at the next confirmation window that opens, as in Fig. \ref{fig:fig40} (b).
+
+
+\begin{figure}[h]
+\centering
+\subfloat
+{\includegraphics[width=.85\textwidth]{Cattura100.jpg}} \\
+\subfloat
+{\includegraphics[width=.85\textwidth]{Cattura101.jpg}} 
+\caption{(\textbf{a}) The windows in which it is possible to choose from the pre-set global setups, and (\textbf{b}) the one with the confirmation window.}\label{fig:fig40}
+\end{figure}
+
+In \textit{Main Setting} [Fig. \ref{fig:fig41}] it is possible to \textit{Enable/Disable} all the channels of one strip, put all the channels of one strip in \textit{Permanent Reset}, and \textit{Set} the \textit{Threshold}, for each strip or for all strips at the same time, manually or in \textit{Autoset}.
+
+\begin{figure}[h]
+\centering
+{\includegraphics[width=.85\textwidth]{Capture57.jpg}} \quad
+\caption{The windows of the FICUS setting (with Main Setting) in Spectrum View.}\label{fig:fig41}
+\end{figure}
+
+In \textit{HW Debug} [Fig. \ref{fig:fig42}] it is possible to see the \textit{PART IDs} of every strips of the detector system and to \textit{TEST} and \textit{RESET}, if it necessary, for each strip or for all strips at the same time, the FPGAs.
+
+\begin{figure}[h]
+\centering
+{\includegraphics[width=.85\textwidth]{Capture59.jpg}} \quad
+\caption{The windows of the FICUS setting (with HW Debug).}\label{fig:fig42}
+\end{figure}
+
+
+As it can be seen in Fig. \ref{fig:fig43}, it is possible to change acquisition mode and switch from \textit{Spectrum View} (used for normal acquisition) to \textit{Scope View (RAW Data)} (used for RAW data), \textit{Scope View (Filtered Data)} (used for filtered RAW data), and \textit{Scope View (Long Time)}.
+
+\begin{figure}[h]
+\centering
+{\includegraphics[width=.95\textwidth]{Cattura106.jpg}} \quad
+\caption{The windows of the FICUS setting (menu of Acquisition Mode).}\label{fig:fig43}
+\end{figure}
+
+When the settings are all set it is possible switch to acquisition window: to do so you have to return to the \textit{Spectrum View Acquisition Mode} and click on the green button at the top right \textit{Use current setting}.
+The FICUS acquisition window opens, which appears as in Fig. \ref{fig:fig44}. To return to the settings just click on the \textit{HW Setting} button.
+
+\begin{figure}[h]
+\centering
+{\includegraphics[width=.9\textwidth]{Cattura81.jpg}} \quad
+\caption{The windows of the FICUS acquisition (Histogram), before alignment and starting the measurement.}\label{fig:fig44}
+\end{figure}
+
+
+The \textbf{FICUS acquisition window}, by clicking on the corresponding buttons in the upper right corner, it is possible to open the window of \textit{System Monitor}, as shown in Figs. \ref{fig:fig32} - \ref{fig:fig33}, and the \textit{Diagnostic Info}, as shown in Figs. \ref{fig:fig45}. The windows of Diagnostic Info are used to verify the correct functioning of the detector through detailed information regarding the status [Figs. \ref{fig:fig45} (a)], counts [Figs. \ref{fig:fig45} (b)], dead time [Figs. \ref{fig:fig45} (c)], and pile-up [Figs. \ref{fig:fig45} (d)] of all channels. From these windows (using the buttons in the upper part is \textit{Show 1 Cell Plot} in Figs. \ref{fig:fig39} (a), \textit{Show Counts} [Figs. \ref{fig:fig39} (b)], and \textit{Show All Plots} [Figs. \ref{fig:fig38}]) it is possible to have detailed information of the signal collected.
+
+On the right of the FICUS acquisition window it is possible to know the count rate of the acquisition (in counts/s), an overview of information on the functioning of the cells and on the counts cell by cell. In addition, the TCP Remote Server connection information is also visible. Under this box, are visible the name and description of the Global Setup in use, and next to them there are buttons to open the \textit{HW Setting}, \textit{Alignment} and \textit{Calibration} windows; next to each of them there is an indicator that has three possible aspects: \textit{PASS} in green (which means that that setting was made), \textit{WARNING} in yellow (which means that that setting has been done previously, but something has been changed since then and you may need to redo the setting), and \textit{FAIL} in red (which means that that setting has never been done before and you need to do the setting).
+
+\clearpage
+
+\begin{figure}[h]
+\centering
+\subfloat
+{\includegraphics[width=.48\textwidth]{Capture53.jpg}} \quad
+\subfloat
+{\includegraphics[width=.48\textwidth]{Capture52.jpg}} \\
+\subfloat
+{\includegraphics[width=.48\textwidth]{Capture51.jpg}} \quad
+\subfloat
+{\includegraphics[width=.48\textwidth]{Capture50.jpg}} \\
+\caption{The windows of the FICUS Diagnostic Information (\textbf{a}) Cell Status, (\textbf{b}) Counts, (\textbf{c}) Deadtimes, (\textbf{d}) Pileups.}\label{fig:fig45}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+{\includegraphics[width=.7\textwidth]{Cattura88.jpg}} \quad
+\caption{The windows of the FICUS Alignment (FWHM).}\label{fig:fig46}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+{\includegraphics[width=.7\textwidth]{Cattura83.jpg}} \quad
+\caption{The windows of the FICUS Alignment (Peaks).}\label{fig:fig47}
+\end{figure}
+
+Clicking on \textit{Alignment} opens the window dedicated to it. The top and right parts of the \textbf{FICUS Alignment window} are always the same; through the mid-page menu it is possible to change the bottom-left part of the window.
+In the Alignment window, from the Figs. \ref{fig:fig46} to the Fig. \ref{fig:fig22}, in the alignment window there is the possibility to load a pre-saved alignment (by clicking on \textit{Load from file...}), to align the channels starting from a new acquisition (by starting the acquisition with the \textit{Start/Stop acquiring} button) or to align the channels starting from saved data (by using the \textit{Original data, load from file...} top left button).
+
+On the right side, starting from the top, it is possible to select manually manually, indicating the detector (\textit{Det.}) and cell (\textit{Cell}), the channel with respect to which to align the others or select the box \textit{Autoselect Cell} for automatic alignment (in which the software, using the chosen criterion, chooses the most appropriate box with respect to which to align the channels); in the graph, on which it is impossible to act, the channels with respect to which the system is aligning are displayed.
+To align is necessary to choose the \textit{Alignment Parameters}: \textit{Peak Reject} (selects only the peaks with the minimum required height compared to the highest), \textit{Peak Width} (selects only the peaks with minimum required width), and the \textit{number of Peak to Use}.  
+Below it is possible, after starting the acquisition or loading the data and selecting the alignment parameters, to calculate the parameters (\textit{Recalc parameters}, selecting \textit{Live recalc}) and apply them, clicking on \textit{Apply parameters}.
+
+After starting the acquisition (click on \textit{Flush} to restart from zero), at the top of the window it is possible to see the histogram (of all channels or only some channels) of the accumulated signal (it is possible change manually the ends of the axes or you can zoom by clicking on the magnifying glass symbol); two markers can be used to delimit the ends of the signal on which to make the alignment. An indicator is provided to indicate that the acquisition is in progress.
+
+In the middle of the Alignment windows there is a menu that allows you to change the information displayed:
+\begin{itemize}
+    \item \textit{Alignment Results} - allows to display a preview of the aligned signal sum [in Fig. \ref{fig:fig48} (a)]
+    \item \textit{\# Peaks} - allows to see how many peaks of the signal of each channel correspond to the set parameters, and therefore are useful for the alignment. When all channels have the same number of peaks (which is also the one chosen in \textit{# of Peak to Use}), the green light will light up. [in Fig. \ref{fig:fig47}]
+    \item \textit{Centers} - allows you to see the position of the centroid, it is possible to select the peak [in Fig. \ref{fig:fig48} (b)]
+    \item \textit{Counts} - allows to see the counts of the cell [in Fig. \ref{fig:fig48} (c)]
+    \item \textit{Max Value} - allows to see the maximum counts of the cell [in Fig. \ref{fig:fig49} (a)]
+    \item \textit{Delta} - maximum [peak centers] - minimum [peak centers] NB CHIARIRE CON LUIGI, the total of all channels and the total for each strip are also displayed [in Fig. \ref{fig:fig49} (b)]
+    \item \textit{FWHM} -  allows to see the FWHM of the cell, it is possible to select the peak, and the total of all channels and the total for each strip are also displayed [in Fig. \ref{fig:fig46}]  
+    \item \textit{Norm. FWHM Quad (\%)} - NB CHIARIRE CON LUIGI, the total of all channels and the total for each strip are also displayed [in Fig. \ref{fig:fig49} (c)]
+\end{itemize}
+
+To complete the alignment in a short time and effectively it is recommended:
+\begin{itemize}
+\item to cut through the cursors any signal baseline and escape peak, so as to leave highlighted the peaks on which to do alignment
+\item to use alignment parameters such as those in the figure  
+\item to wait for the time necessary to have a good signal collection
+\item to have the same number of peaks on all channels (and then turn on the light in the \textit{Peaks} box)
+\end{itemize}
+If it is necessary to leave the alignment procedure without completing it, click on \textit{Discard all changes}.
+At the end of the procedure, when you have a good sum signal, (if you want you can save the alignment by clicking on the \textit{Save to file...} button) and  exit the alignment procedure by clicking on \textit{Stop acquiring} and then on \textit{Use current alignment}. This will re-open the acquisition window and the alignment indicator will be coloured green, as shown in Fig. \ref{fig:fig50}.
+
+Back to the FICUS acquisition window, it is possible to start a measurement by setting the \textit{Frame Duration} and the \textit{Acquisition Time} (in format hh:mm:ss). For a single measurement equal to the duration of the frame click on \textit{Single Acquire (F5)}, for a timed measurement just set the acquisition time and then click on \textit{Continuous Acquire (F6)}. If instead it is wanted to start and stop the measurement manually, it is enough to leave the acquisition time field at zero.
+
+The \textit{Histogram Graph} box [Fig. \ref{fig:fig51}] shows the accumulated graph of the sum signal [it is also possible to display the signal of the single channels by clicking on \textit{Sum (Aligned)} an additional one will appear in which it is possible to choose which channel to display]. It is possible change manually the ends of the axes or you can zoom by clicking on the magnifying glass symbol (to unlock the ladder just click on the bolt symbol).
+It is possible to choose whether to display the Y axis in linear or logarithmic scale, and the X axis in channels or in eV (this is possible only after having performed the calibration procedure).
+
+\clearpage
+
+\begin{figure}[h]
+\centering
+\subfloat
+{\includegraphics[width=.6\textwidth]{Cattura82.jpg}} \\
+\subfloat
+{\includegraphics[width=.6\textwidth]{Cattura84.jpg}} \\
+\subfloat
+{\includegraphics[width=.6\textwidth]{Cattura85.jpg}} \\
+\caption{The windows of the FICUS Alignment: (\textbf{a}) Alignment Result, (\textbf{b}), Centers, (\textbf{c}) Counts.}\label{fig:fig48}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\subfloat
+{\includegraphics[width=.6\textwidth]{Cattura86.jpg}} \\
+\subfloat
+{\includegraphics[width=.6\textwidth]{Cattura87.jpg}} \\
+\subfloat
+{\includegraphics[width=.6\textwidth]{Cattura89.jpg}} \\
+\caption{The windows of the FICUS Alignment: (\textbf{a}) Max Value, (\textbf{b}), Delta, (\textbf{c}) Norm. FWHM Quad (\%).}\label{fig:fig49}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+{\includegraphics[width=.85\textwidth]{Cattura90.jpg}} \quad
+\caption{The windows of the FICUS acquisition (Histogram), after Alignment.}\label{fig:fig50}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+{\includegraphics[width=.85\textwidth]{Cattura98.jpg}} \quad
+\caption{The windows of the FICUS acquisition (Histogram), after the measurement by one minute with a simulated signal.}\label{fig:fig51}
+\end{figure}
+
+\clearpage
+
+During or after the acquisition it is possible to select Regions Of Interest (ROI) clicking on \textit{Add ROI} and by positioning the sliders manually; up to 20 different ROIs can be selected (there are 4 colours and they repeat cyclically with no choice) [Fig. \ref{fig:fig51bis}]. 
+The table below shows the data of each ROI: \textit{Events}, \textit{Min} position, \textit{Max} position, \textit{Peak} position, and an estimate of the \textit{FWHM} (is calculated as the width at half height considering the intersections of the sliders with the signal). 
+If the calibration procedure has been performed, when eV is selected as the X unit, the ROI data also changes the unit of measurement.
+The ROI can be removed individually by clicking on \textit{Remove ROI} and selecting the one to be deleted, or all by clicking on \textit{Clear all}.
+
+\begin{figure}[h!]
+\centering
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura97.jpg}} \quad
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura98.jpg}} \\
+\caption{The windows of the FICUS acquisition: adding ROI.}\label{fig:fig51bis}
+\end{figure}
+
+After stopping or ending the acquisition, it is possible to perform the calibration: clicking on \textit{Calibration} opens the window dedicated to it. \textbf{FICUS Calibration window} appears as in Fig.  \ref{fig:fig52} (a): the accumulated signal is visible and you can zoom in using the zoom button.
+A previously saved calibration file can be loaded (by clicking on \textit{Load from file...}) or a new calibration can be performed. To do this it is necessary to click on \textit{New point...} (to select a point on the x-axis) or on \textit{New region...} (to select the region of the peak we are interested in using cursors, search for the maximum); in the window that appears, write the name of the element corresponding to the centre of the peak and then the corresponding energy.
+Repeat the procedure for all peaks you want to identify. If it is necessary to delete one or all of the points inserted, it is possible to do so by clicking on \textit{Delete Calibration Item...} or \textit{Delete All Calibration Items}. To exit without saving or applying the calibration click on \textit{Ignore Change}. When it is considered sufficient, (you can save the calibration by clicking on \textit{Save to file...} and select the name of the file) it is possible to apply the calibration by clicking on \textit{Use This Calibration} [Fig.  \ref{fig:fig52}]. This will re-open the acquisition window and the calibration indicator will be coloured green, as shown in Fig. \ref{fig:fig53}.
+
+\begin{figure}[h!]
+\centering
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura92.jpg}} \quad
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura93.jpg}} \\
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura94.jpg}} \quad
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura95.jpg}} \\
+\caption{The windows of the FICUS Calibration.}\label{fig:fig52}
+\end{figure}
+
+Instead of the histogram, it is possible to display the \textit{Counts Chart} to monitor the number of total counts and ROI counts [Fig. \ref{fig:fig53}].
+
+\begin{figure}[h]
+\centering
+{\includegraphics[width=.8\textwidth]{Capture49.jpg}} \quad
+\caption{The windows of the FICUS acquisition (Counts Charts), after Alignment and Calibration.}\label{fig:fig53}
+\end{figure}
+
+To save the acquired data and the information related to them, just click on \textit{SAVE DATA}, select the saving folder and indicate the name of the file. 
 
 
 
+To delete the acquisition data, and be ready to start with a new acquisition (continuing to work with the same alignment and calibration) just click on \textit{Clear All}.
 
+\clearpage
+\begin{figure}[h]
+\centering
+{\includegraphics[width=.7\textwidth]{Cattura99.jpg}} \quad
+\caption{The windows of the FICUS acquisition: saving data.}\label{fig:fig54}
+\end{figure}
 
+\textbf{To switch off the system, carefully follow the switch-off procedure described in the section \textit{Instructions for switching} on on page \pageref{spegnimento}}. 
 
+To close the FICUS software, from the acquisition window click on the \textit{X}, the FICUS control window will appear [Fig. \ref{fig:fig55} (a)]. Click on \textit{Disconnect}, a message will open to confirm disconnecting the detector, press \textit{OK}, as shown in Fig. \ref{fig:fig55} (b). To close the software [Fig. \ref{fig:fig55} (c)] click on \textit{Quit}, a confirmation message will open, press \textit{OK}, as shown in Fig. \ref{fig:fig55} (d).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\begin{figure}[h]
+\centering
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura70.jpg}}  \quad
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura71.jpg}} \\
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura72.jpg}}  \quad
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura73.jpg}} \\
+\caption{The FICUS control window (\textbf{a}) Connected, (\textbf{b}) With the message requesting confirmation to disconnect, (\textbf{c}) Disconnected, (\textbf{d}) Disconnected and with the message requesting confirmation that the program has been closed.}\label{fig:fig55}
+\end{figure}
 
 
 
@@ -513,7 +816,7 @@ Before starting any activity, please take a look at the \textbf{Safety warnings 
 
 This version of the software is useful for the users in order to realize the planned measurements.
 
-Only the FICUS software Beamline Staff version can connect the detectors
+Only the FICUS software Beamline Staff version can connect the detectors.
 
 
 
