@@ -404,7 +404,7 @@ It is possible to choose whether to display the Y axis in linear or logarithmic 
 
 During or after the acquisition it is possible to select Regions Of Interest (ROI) clicking on \textit{Add ROI} and by positioning the sliders manually; up to 20 different ROIs can be selected (there are 4 colours and they repeat cyclically with no choice) [Fig. \ref{fig:fig24}]. 
 The table below shows the data of each ROI: \textit{Events}, \textit{Min} position, \textit{Max} position, \textit{Peak} position, and an estimate of the \textit{FWHM} (is calculated as the width at half height considering the intersections of the sliders with the signal). 
-If the calibration procedure has been performed, when eV is selected as the X unit, the ROI data also changes the unit of measurement.
+If the calibration procedure has been performed, when eV is selected as the X unit, the ROI data also changes the unit of measurement and the table shows the list of the elements that may correspond to the selected peak in the ROI.
 The ROI can be removed individually by clicking on \textit{Remove ROI} and selecting the one to be deleted, or all by clicking on \textit{Clear all}.
 
 After stopping or ending the acquisition, it is possible to perform the calibration: clicking on \textit{Calibration} opens the window dedicated to it. \textbf{FICUS Calibration window} appears as in Fig.  \ref{fig:fig25}: the accumulated signal is visible and you can zoom in using the zoom button.
@@ -446,6 +446,9 @@ To close the FICUS software, from the acquisition window click on the \textit{X}
 
 \clearpage
 
+
+
+
 \section{Guide for Beamline Staff}
 
 Before starting any activity, please take a look at the \textbf{Safety warnings for using the SESAME-XAFS Detector System}, on page \pageref{accensione}, and the \textbf{Instructions for switching on/off}, respectively on page \pageref{accensione} and \pageref{spegnimento}.
@@ -454,7 +457,7 @@ This version of the software is recommended for the beamline staff in order to o
 
 To pass from the FICUS software User version to the Beamline Staff version it is necessary to have the access codes.
 
-Only the FICUS software Beamline Staff version can connect the detectors. 
+\textbf{Only the FICUS software Beamline Staff version can connect and disconnect the detectors. }
 
 \begin{figure}[h]
 \centering
@@ -569,7 +572,7 @@ In the lower right part of the window there are: a graph with the Cells counts r
 \end{figure}
 
 In the central part of the window, there is an additional menu that modifies the central part of the window by enabling further possible adjustments. \\
-In \textit{Global Setup} there is the possibility to save (assigning a name and notes) the current settings, with \textit{Save Global Setup}, or to open settings already set and saved, with \textit{Load Global Setup}. if you select the latter option in particular, a further window opens in which it is possible to choose from the 8 pre-set global setups: four different possible filter lengths (0.4, 0.7, 1, and 1.45 $\mu$s) at two possible cell temperatures (at room temperature, Tamb, and with cooled cells with voltage on the Peltier cells, Tcool) [Fig. \ref{fig:fig10} (a)]. After selecting the one you want, just click on \textit{OK, load this setup}, and \textit{Yes} at the next confirmation window that opens, as in Fig. \ref{fig:fig40} (b).
+In \textit{Global Setup} there is the possibility to save (assigning a name and notes) the current settings, with \textit{Save Global Setup}, or to open settings already set and saved, with \textit{Load Global Setup}. if you select the latter option in particular, a further window opens in which it is possible to choose from the 8 pre-set global setups: four different possible filter lengths (0.4, 0.7, 1, and 1.45 $\mu$s) at two possible cell temperatures (at room temperature, Tamb, and with cooled cells with voltage on the Peltier cells, Tcool) [Fig. \ref{fig:fig40} (a)]. After selecting the one you want, just click on \textit{OK, load this setup}, and \textit{Yes} at the next confirmation window that opens, as in Fig. \ref{fig:fig40} (b).
 
 
 \begin{figure}[h]
@@ -602,7 +605,7 @@ As it can be seen in Fig. \ref{fig:fig43}, it is possible to change acquisition 
 
 \begin{figure}[h]
 \centering
-{\includegraphics[width=.95\textwidth]{Cattura106.jpg}} \quad
+{\includegraphics[width=.95\textwidth]{Cattura106b.jpg}} \quad
 \caption{The windows of the FICUS setting (menu of Acquisition Mode).}\label{fig:fig43}
 \end{figure}
 
@@ -726,7 +729,7 @@ It is possible to choose whether to display the Y axis in linear or logarithmic 
 
 During or after the acquisition it is possible to select Regions Of Interest (ROI) clicking on \textit{Add ROI} and by positioning the sliders manually; up to 20 different ROIs can be selected (there are 4 colours and they repeat cyclically with no choice) [Fig. \ref{fig:fig51bis}]. 
 The table below shows the data of each ROI: \textit{Events}, \textit{Min} position, \textit{Max} position, \textit{Peak} position, and an estimate of the \textit{FWHM} (is calculated as the width at half height considering the intersections of the sliders with the signal). 
-If the calibration procedure has been performed, when eV is selected as the X unit, the ROI data also changes the unit of measurement.
+If the calibration procedure has been performed, when eV is selected as the X unit, the ROI data also changes the unit of measurement and the table shows the list of the elements that may correspond to the selected peak in the ROI.
 The ROI can be removed individually by clicking on \textit{Remove ROI} and selecting the one to be deleted, or all by clicking on \textit{Clear all}.
 
 \begin{figure}[h!]
@@ -763,9 +766,7 @@ Instead of the histogram, it is possible to display the \textit{Counts Chart} to
 \caption{The windows of the FICUS acquisition (Counts Charts), after Alignment and Calibration.}\label{fig:fig53}
 \end{figure}
 
-To save the acquired data and the information related to them, just click on \textit{SAVE DATA}, select the saving folder and indicate the name of the file. 
-
-
+To save the acquired data and the information related to them, just click on \textit{SAVE DATA}, select the saving folder and indicate the name of the file, as shown in Fig. \ref{fig:fig54}. 
 
 To delete the acquisition data, and be ready to start with a new acquisition (continuing to work with the same alignment and calibration) just click on \textit{Clear All}.
 
@@ -794,20 +795,6 @@ To close the FICUS software, from the acquisition window click on the \textit{X}
 \end{figure}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 \clearpage
 
 \section{Guide for User}
@@ -816,28 +803,124 @@ Before starting any activity, please take a look at the \textbf{Safety warnings 
 
 This version of the software is useful for the users in order to realize the planned measurements.
 
-Only the FICUS software Beamline Staff version can connect the detectors.
+\textbf{Only the FICUS software Beamline Staff version can connect and disconnect the detectors}.
+
+After the launch of FICUS software, please refer to the staff beamline for for switching on the detector system, the first window is the one shown in Fig. \ref{fig:fig56}.
+
+        \begin{figure}[h]
+        \centering
+        \includegraphics[scale=0.5]{Capture34.jpg} \quad %width=0.7\textwidth
+        \caption{The first window of FICUS software}\label{fig:fig56}
+        \end{figure}
+
+\begin{figure}[h]
+\centering
+\subfloat
+{\includegraphics[width=.45\textwidth]{Cattura106.jpg}} \quad
+\subfloat
+{\includegraphics[width=.45\textwidth]{Cattura111.jpg}} \\
+\caption{(\textbf{a}) The log of the dew point temperature. (\textbf{b}) the table with all the last measured temperatures (visible after connecting the detectors).}\label{fig:fig57}
+\end{figure}
+
+In the \textbf{System Monitor window} it is possible to see the dew point temperature of the system, the time, the status of the detectors and the status of the TCP Remote Server (red disconnected - green connected). 
+
+
+After connect of the detector, it is also possible to click on \textit{System monitor} to know: 
+\begin{itemize}
+    \item the log of the dew point temperature [in Fig. \ref{fig:fig57} (a)]
+    \item the log of the temperature of the strips [in Fig. \ref{fig:fig58} (a)]
+    \item the log of the temperature of the LDOs [in Fig. \ref{fig:fig58} (b)]
+    \item the log of the temperature of the FPGAs [in Fig. \ref{fig:fig58} (c)]
+    \item the log of the temperature of the ADCs [in Fig. \ref{fig:fig58} (d)]
+    \item the table with all the last measured temperatures [in Fig. \ref{fig:fig57} (b)]
+\end{itemize}
+
+In the log it is possible to modify the time duration displayed and to set the extremes of the graph, or to set its auto setting.
+
+\begin{figure}[h]
+\centering
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura107.jpg}} \quad
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura108.jpg}} \\
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura109.jpg}} \quad
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura110.jpg}} \\
+\caption{In clockwise direction starting from the top left (the values represented are derived from a simulation and purely figurative) (\textbf{a}) The log of the temperature of the strips (\textbf{b}) The log of the temperature of the LDOs (\textbf{c}) The log of the temperature of the FPGAs (\textbf{d}) the log of the temperature of the ASICs.}\label{fig:fig58}
+\end{figure}
+
+\textbf{All settings, channel alignment and calibration must be done, by those who have access, with FICUS Beamline Staff version.}
+
+The \textbf{FICUS acquisition window} opens, which appears as in Fig. \ref{fig:fig59}. To return to the settings just click on the \textit{HW Setting} button.
 
 
 
+On the right of the FICUS acquisition window it is possible to know the count rate of the acquisition (in counts/s), an overview of information on the functioning of the cells and on the counts cell by cell. In addition, the TCP Remote Server connection information is also visible. Under this box, are visible the name and description of the Global Setup in use, and next to them there are buttons to open the \textit{HW Setting}, \textit{Alignment} and \textit{Calibration} windows; next to each of them there is an indicator that has three possible aspects: \textit{PASS} in green (which means that that setting was made), \textit{WARNING} in yellow (which means that that setting has been done previously, but something has been changed since then and you may need to redo the setting), and \textit{FAIL} in red (which means that that setting has never been done before and you need to do the setting).
+
+It is possible to start a measurement by setting the \textit{Frame Duration} and the \textit{Acquisition Time} (in format hh:mm:ss). For a single measurement equal to the duration of the frame click on \textit{Single Acquire (F5)}, for a timed measurement just set the acquisition time and then click on \textit{Continuous Acquire (F6)}. If instead it is wanted to start and stop the measurement manually, it is enough to leave the acquisition time field at zero.
+
+The \textit{Histogram Graph} box [Fig. \ref{fig:fig60}] shows the accumulated graph of the sum signal [it is also possible to display the signal of the single channels by clicking on \textit{Sum (Aligned)} an additional one will appear in which it is possible to choose which channel to display]. It is possible change manually the ends of the axes or you can zoom by clicking on the magnifying glass symbol (to unlock the ladder just click on the bolt symbol).
+It is possible to choose whether to display the Y axis in linear or logarithmic scale, and the X axis in channels or in eV (this is possible only after having performed the calibration procedure).
 
 
 
+\clearpage
+
+\begin{figure}[h!]
+\centering
+{\includegraphics[width=.8\textwidth]{Cattura112.jpg}} \quad
+\caption{The windows of the FICUS acquisition (Histogram).}\label{fig:fig59}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+{\includegraphics[width=.8\textwidth]{Cattura113.jpg}} \quad
+\caption{The windows of the FICUS acquisition (Histogram), after a measurement by one minute with a simulated signal.}\label{fig:fig60}
+\end{figure}
+
+\clearpage
 
 
+During or after the acquisition it is possible to select Regions Of Interest (ROI) clicking on \textit{Add ROI} and by positioning the sliders manually; up to 20 different ROIs can be selected (there are 4 colours and they repeat cyclically with no choice) [Fig. \ref{fig:fig61}]. 
+The table below shows the data of each ROI: \textit{Events}, \textit{Min} position, \textit{Max} position, \textit{Peak} position, and an estimate of the \textit{FWHM} (is calculated as the width at half height considering the intersections of the sliders with the signal). 
+If the calibration procedure has been performed, when eV is selected as the X unit, the ROI data also changes the unit of measurement and the table shows the list of the elements that may correspond to the selected peak in the ROI [Fig. \ref{fig:fig60bis}].
+The ROI can be removed individually by clicking on \textit{Remove ROI} and selecting the one to be deleted, or all by clicking on \textit{Clear all}.
 
+\begin{figure}[h!]
+\centering
+{\includegraphics[width=.7\textwidth]{Capture35.jpg}} \quad
+\caption{The windows of the FICUS acquisition (Histogram), after a real measurement by five minute.}\label{fig:fig60bis}
+\end{figure}
 
+\begin{figure}[h!]
+\centering
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura114.jpg}} \quad
+\subfloat
+{\includegraphics[width=.48\textwidth]{Cattura115.jpg}} \\
+\caption{The windows of the FICUS acquisition: adding ROI.}\label{fig:fig61}
+\end{figure}
 
+Instead of the histogram, it is possible to display the \textit{Counts Chart} to monitor the number of total counts and ROI counts [Fig. \ref{fig:fig62}].
 
+\begin{figure}[h]
+\centering
+{\includegraphics[width=.7\textwidth]{Capture36.jpg}} \quad
+\caption{The windows of the FICUS acquisition (Counts Charts), after Alignment and Calibration.}\label{fig:fig62}
+\end{figure}
 
+\begin{figure}[h!]
+\centering
+{\includegraphics[width=.7\textwidth]{Cattura116.jpg}} \quad
+\caption{The windows of the FICUS acquisition: saving data.}\label{fig:fig63}
+\end{figure}
 
+To save the acquired data and the information related to them, just click on \textit{SAVE DATA}, select the saving folder and indicate the name of the file, as shown in Fig. \ref{fig:fig63}. 
 
+To delete the acquisition data, and be ready to start with a new acquisition (continuing to work with the same alignment and calibration) just click on \textit{Clear All}.
 
-
-
-
-
-
+\textbf{Only the FICUS software Beamline Staff version can connect and disconnect the detectors}.
 
 
 
